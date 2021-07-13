@@ -926,19 +926,7 @@ body {
   position: relative;
 }
 
-.box-footer .rdp:hover {
-  cursor: pointer;
-}
-
-.box-footer .rdp:hover + .box-cont {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  opacity: 1;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-}
-
-.box-footer .box-cont {
+.box-cont {
   position: absolute;
   top: -20px;
   -webkit-transform: translate3d(0, 70px, 0);
@@ -947,5 +935,17 @@ body {
   -webkit-transition: .4s ease;
   transition: .4s ease;
   z-index: -1;
+}
+
+.rdp:hover {
+  cursor: pointer;
+}
+
+.rdp:hover + .box-cont {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 /*# sourceMappingURL=style.css.map */

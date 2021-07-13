@@ -158,25 +158,26 @@
 
     position: relative;
 
-    .rdp {
-        
-        &:hover {
-            cursor: pointer;
+    
+}
 
-            & + .box-cont{
-                transform: translate3d(0,0,0);
-                opacity: 1;
-                transform: scale(1.5);
-            }
+.box-cont {
+    position: absolute;
+    top: -20px;
+    transform: translate3d(0,70px,0);
+    opacity: 0;
+    transition: .4s ease;
+    z-index: -1;
+}
+
+.rdp {
+    &:hover {
+        cursor: pointer;
+
+        & + .box-cont{
+            transform: translate3d(0,0,0);
+            opacity: 1;
+            transform: scale(1.5);
         }
-    }
-
-    & .box-cont {
-        position: absolute;
-        top: -20px;
-        transform: translate3d(0,70px,0);
-        opacity: 0;
-        transition: .4s ease;
-        z-index: -1;
     }
 }
